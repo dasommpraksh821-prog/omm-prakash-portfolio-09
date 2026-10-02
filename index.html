@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Omm Prakash | Portfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 8%;
+
+            background: rgba(2, 6, 23, 0.95);
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 90vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+
+            padding: 60px 10%;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h3 {
+            font-size: 24px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        /* PHOTO */
+
+        .profile-photo {
+            width: 280px;
+            height: 280px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 5px solid #38bdf8;
+
+            box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
+        }
+
+        /* BUTTON */
+
+        .btn {
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 13px 25px;
+
+            background: #38bdf8;
+
+            color: #020617;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 90px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 38px;
+            margin-bottom: 30px;
+            color: #38bdf8;
+        }
+
+        .section-text {
+            max-width: 750px;
+            margin: auto;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .skill {
+            background: #1e293b;
+
+            padding: 15px 25px;
+
+            border-radius: 10px;
+
+            border: 1px solid #334155;
+
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        /* EDUCATION */
+
+        .education-card {
+            max-width: 650px;
+            margin: auto;
+
+            background: #1e293b;
+
+            padding: 35px;
+
+            border-radius: 15px;
+        }
+
+        .education-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .education-card p {
+            color: #94a3b8;
+        }
+
+        /* PROJECT */
+
+        .project-card {
+            max-width: 650px;
+            margin: auto;
+
+            background: #1e293b;
+
+            padding: 35px;
+
+            border-radius: 15px;
+
+            text-align: left;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+        }
+
+        /* CONTACT */
+
+        .contact-links a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+
+            background: #020617;
+
+            color: #94a3b8;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .profile-photo {
+                width: 220px;
+                height: 220px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <h2>Omm Prakash</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Hi, I'm <span>Omm Prakash</span> 👋
+            </h1>
+
+            <h3>
+                B.Sc. ITM Student | Aspiring Software Developer
+            </h3>
+
+            <p>
+                Passionate about programming, problem solving
+                and building things with technology.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+        </div>
+
+
+        <img
+            src="profile.jpg"
+            alt="Omm Prakash"
+            class="profile-photo"
+        >
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p class="section-text">
+
+            Hello! I'm Omm Prakash, a B.Sc. ITM student at
+            BJB College
